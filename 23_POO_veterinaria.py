@@ -23,13 +23,36 @@ class Ave(Mascota):
 class Veterinario:
     def __init__(self, nombre, especialidad, citas):
         self.nombre = nombre
-        self.especialidad = 
+        self.especialidad = especialidad
         self.citas = []
 
+    def atender_cita(self, cita):
+        pass
+
+    def registrar_diagnostico(self, diagnostico):
+        pass
+
 class Cliente:
-    pass
+    def __init__(self, nombre, telefono):
+        self.nombre = nombre
+        self.telefono = telefono
+        self.mascota = []
+
+    def agendar_cita(self): 
+        pass
 
 class Cita:
-    pass
+    def __init__(self, fecha, motivo):
+        self.fecha = fecha
+        self.motivo = motivo
+
 class Diagnostico:
-    pass
+    def __init__(self, fecha, descripcion):
+        self.fecha = fecha
+        self.descripcion = descripcion
+
+    def registrar_diagnostico(self):
+        pass
+
+    def mostrar_diagnostico(self):
+        pass
